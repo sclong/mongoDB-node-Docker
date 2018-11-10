@@ -1,9 +1,9 @@
-version: '2'
+version: '3'
 services:
   app:
-    container_name: docker-node-mongo # container name
-    restart: always # restart always when failed
-    build: . # use the Dockerfile in pwd
+    container_name: docker-node-mongo
+    restart: always
+    build: .
     ports:
       - '80:3000'
     links:
